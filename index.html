@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гурт «Грім та Грім»</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">G&G</div>
+    <nav>
+      <ul>
+        <li><a href="#about">Про гурт</a></li>
+        <li><a href="#concerts">Концерти</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Гурт «Грім та Грім»</h1>
+      <p>Справжній український рок, який гуркоче в серці.</p>
+      <button class="btn yellow" data-popup="ticket">ЗАМОВИТИ КВИТОК</button>
+    </div>
+  </section>
+
+  <section id="concerts" class="concerts">
+    <h2>Найближчі концерти</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Місто / Заклад</th>
+          <th>К-сть місць</th>
+          <th>Дата і час</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Київ — Docker-G Pub</td>
+          <td>250</td>
+          <td>25.10.2025, 19:00</td>
+          <td><button class="btn red" data-popup="ticket">Замовити квиток</button></td>
+        </tr>
+        <tr>
+          <td>Львів — !FESTrepublic</td>
+          <td>400</td>
+          <td>01.11.2025, 20:00</td>
+          <td><button class="btn red" data-popup="ticket">Замовити квиток</button></td>
+        </tr>
+        <tr>
+          <td>Одеса — Зелений театр</td>
+          <td>700</td>
+          <td>09.11.2025, 19:30</td>
+          <td><button class="btn red" data-popup="ticket">Замовити квиток</button></td>
+        </tr>
+        <tr>
+          <td>Харків — ArtZavod</td>
+          <td>500</td>
+          <td>16.11.2025, 19:00</td>
+          <td><button class="btn red" data-popup="ticket">Замовити квиток</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="gallery" class="members">
+    <h2>Учасники гурту</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://res.cloudinary.com/dserfv7z4/image/upload/v1758189102/ai-generated-8086991_1280_1_c57psp.jpg"
+          alt="Максим — гітара" width="264" height="260">
+        <p>Максим — гітара</p>
+      </div>
+      <div class="card">
+        <img src="https://res.cloudinary.com/dserfv7z4/image/upload/v1758189103/ai-generated-8741799_1280_bbdnlu.jpg"
+          alt="Олена — вокал" width="264" height="260">
+        <p>Олена — вокал</p>
+      </div>
+      <div class="card">
+        <img src="https://res.cloudinary.com/dserfv7z4/image/upload/v1758189107/ai-generated-9004962_1280_1_zsvh2h.jpg"
+          alt="Тарас — барабани" width="264" height="260">
+        <p>Тарас — барабани</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Наша історія</h2>
+    <p>
+      «Грім та Грім» народився з бажання створювати музику, яка відчувається серцем.
+      Ми почали свій шлях у маленькому клубі з центру Києва, де кожен акорд, кожне слово
+      були маленьким емоційним вибухом. Сьогодні ми виступаємо на великих сценах, але
+      залишаємося тими, хто любить звук, свободу та силу музики.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Зв'яжись з нами</h2>
+    <form id="contactForm" method="GET" action="submit.html">
+      <input type="text" name="name" placeholder="Ім'я" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Розкажи про свої ідеї..." required></textarea>
+      <button type="submit" class="btn yellow">Відправити</button>
+    </form>
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=Kyiv&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 «Грім та Грім». Всі права захищені.</p>
+    <p>Email: booking@lotoplay.xyz | Тел: +38 (093) 123-45-67</p>
+  </footer>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h3>Замовлення квитка</h3>
+      <p>Функціонал покупки буде доступний пізніше.</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
